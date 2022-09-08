@@ -1,10 +1,10 @@
 #include <stdio.h>
-   /**
-    * main - entry point
-    * Return: o */
+/**
+ * main - entry point
+ * Return: 0
+ */
 int main(void)
 {
-    puts("\"programming is like buiding a multilingual puzzle");
-    return (o);
-    }
-  
+puts("\"programming is like building a multilingual puzze");
+return (0);
+}
