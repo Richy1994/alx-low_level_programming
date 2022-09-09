@@ -1,10 +1,15 @@
 #include <stdio.h>
-#include <string.h>
-#include <unistd.h>
+include  <unistd.h>
+
 /**
- *main - main block
- *Return: 1
- */
+* main - Entry point
+*
+Description: 'and that piece of rt is useful" - Dora Korpar, 2015-10-19'
+* Return: Always 0 (success)
+*/
+
 int main(void)
 {
-  int s = strlen("and that piece of art is usefui\" -Dora Korpar, 2015-10-19\n");
+write(1, "and that piece of art is useful\" - Dora korpar, 2015-10-19\n", 59);
+return (1);
+}
