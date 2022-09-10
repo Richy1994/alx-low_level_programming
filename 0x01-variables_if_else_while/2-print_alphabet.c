@@ -1,33 +1,18 @@
 #include <stdio.h>
-
 /**
-* main - Prints combination of numbers
+* main - print if the number is postive, zero, or negative
 *
-* Return: Always (Success)
+* Description: using the main function
+* this program prints "Programming is positive, zero, or negative
+* Return: 0
 */
 int main(void)
 {
-int c, i;
-
-for (c = '0'; c <= '9'; c++)
+char ch;
+for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-for (i = '0'; i <= '9'; i++)
-{
-if (c < i)
-{
-putchar(c);
-putchar(i);
-
-if (c != '8' || (c == '8' && i != '9'))
-{
-putchar(',');
-putchar(' ');
+putchar(ch);
 }
-}
-}
-}
-
 putchar('\n');
-
 return (0);
 }
