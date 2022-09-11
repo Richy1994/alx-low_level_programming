@@ -1,19 +1,11 @@
-#!/bin/bash
-gcc -S -masm=intel $CFILE
-     [9/8, 2:38 PM] +260 96 2803778: task 8
 #include <stdio.h>
-#include <string.h>
-#include <unistd.h>
-     /**
-      * main - main block
-      * Return: 1
-      */
-     int main(void)
-  {
-   int s = strlen("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
-
-   write(2,
-	 "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
-	 s);
-   return (1);
-  }
+#include <stdlib.h>
+/**
+* main - Entry point
+* Return: Always 1 (Success)
+*/
+int main(void)
+{
+printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+return (1);
+}
