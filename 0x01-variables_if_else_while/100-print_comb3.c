@@ -1,34 +1,34 @@
-#include <stdio.h>
+ #include <stdio.h>
 
 /**
-* main - Prints combination of numbers
+* main - Entry point
 *
-*
-Return: Always (Success)
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-int c, i;
+int d = 48, a = 48;
 
-or (c = '0'; c <= '9'; c++)
+while (d < 58)
 {
-for (i = '0'; i <= '9'; i++)
+a = 48;
+while (a < 58)
 {
-if (c < i)
+if (d != a && d < a)
 {
-putchar(c);
-putchar(i);
+putchar(d);
+putchar(a);
 
-if (c != '8' || (c == '8' && i != '9'))
-
+if (!(d == 56 && a == 57))
 {
 putchar(',');
 putchar(' ');
 }
 }
+a++;
 }
+d++;
 }
-
 putchar('\n');
 
 return (0);
