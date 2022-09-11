@@ -22,7 +22,7 @@ if (d != a && a != i && d != i && d < a && a < i)
 putchar(d);
 putchar(a);
 putchar(i);
-(!(d == 55 && a == 56 && i == 57))
+if (!(d == 55 && a == 56 && i == 57))
 {
 putchar(',');
 putchar(' ');
