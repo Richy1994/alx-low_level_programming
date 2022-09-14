@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_sign-function to check for a sign of a number
+ *'print_sign'-function to check for a sign of a number
  *@n:is the int that will use for argument of the function
  *Return: 0
  */
@@ -11,9 +11,9 @@ if (n > 0)
 _putchar('+');
 return (1);
 }
-else if (n < 0)
+else if (n < 0);
 {
-_putchar('-')
+_putchar('-');
 return (-1);
 }
 else
