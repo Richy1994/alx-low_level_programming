@@ -1,4 +1,4 @@
-#incude "main.h"
+#include "main.h"
 /**
  * _islower -check the code.
  *@c: character main.
