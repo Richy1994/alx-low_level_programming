@@ -1,3 +1,19 @@
+f Emacs and modify it; type C-h C-c to see the conditions.
+Type C-h C-o for information on getting the latest version.
+
+If an Emacs session crashed recently, type M-x recover-session RET
+			 to recover the files you were editing.
+
+
+
+			 f Emacs and modify it; type C-h C-c to see the conditions.
+Type C-h C-o for information on getting the latest version.
+
+If an Emacs session crashed recently, type M-x recover-session RET
+to recover the files you were editing.
+
+
+
 #include "main.h"
 
 /**
