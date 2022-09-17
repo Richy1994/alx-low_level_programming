@@ -1,28 +1,43 @@
 #include "main.h"
 
 /**
- * print_triangle - draws a triangle in terminal
- * @size: height and width of the triangle
- * Return: returns nothing
+ * print_triangle - prints triangle
+ * @size: print size
+ * Return: Always 0.
  */
-void print_triangle(int size)
-{
-int i, j;
 
-if (size <= 0)
-_putchar('\n');
+void print_triangle(int size)
+
+{
+int i;
+
+int z;
+
+int d;
+
+int p;
+
+if (size > 0)
+{
+d = size - 1;
+for (i = 0; i < size ; i++)
+
+{
+for (z = d; z > 0 ; z--)
+
+{
+_putchar (' ');
+}
+for (p = 0; p <= i; p++)
+{
+_putchar (35);
+}
+d--;
+_putchar ('\n');
+}
+}
 else
 {
-for (i = 0; i < size; i++)
-{
-for (j = 1; j <= size; j++)
-{
-if (j < (size - i))
-{
-_putchar(' ');
-continue;
+_putchar ('\n');
 }
-_putchar('#');
-}
-_putchar('\n');
 }
