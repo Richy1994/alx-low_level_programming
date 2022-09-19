@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * _puts - main function.
- * @str: Pointer with the address value.
- * Description: This function takes a pointer to an int as parameter
- * and updates the value it points to to 98.
+ * _puts - check the code
  *
- * Return: none.
+ * @str: prints a string with next line
  */
 void _puts(char *str)
 {
-while (*str != '\0')
+int i = 0;
+
+while (*(str + 1))
 {
-_putchar(*str++);
+_putchar(*(str + 1));
+1++;
 }
 _putchar('\n');
 }
