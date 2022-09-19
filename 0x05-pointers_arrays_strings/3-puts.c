@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _puts - check the code
  *
@@ -12,7 +11,7 @@ int i = 0;
 while (*(str + 1))
 {
 _putchar(*(str + 1));
-1++;
+i++;
 }
 _putchar('\n');
 }
