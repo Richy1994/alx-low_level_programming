@@ -1,44 +1,39 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
 
 /**
- * main - Principal 
- *
- * @ac: count arguments
- * @ag: array
- *
- * Return: Always 0
+ * main - This function calculates the values of two numbers
+ * @argc: This is the argument count
+ * @argv: This is the argument vector
+ * Return: 0 if successful
  */
-int main(int arc, char *arg[])
+int main(int argc, char **argv)
 {
-int num1, num2, (*operate)(int, int);
+int (*f)(int a, int b);
+int a, b;
 
-if (arc != 4)
+if (argc != 4)
+
 {
 printf("Error\n");
 exit(98);
 }
-if ((*arg[2] != '+' &&
-*arg[2] != '-' &&
-*arg[2] != '/' &&
-*arg[2] != '*' &&
-*arg[2] != '%')
-|| arg[2][1] != '\0')
+
+a = atoi(argv[1]);
+b = atoi(argv[3]);
+
+if ((argv[2][0] == '/' || argv[2][0] == '%') && b == 0)
+{
+printf("Error\n");
+exit(100);
+}
+
+f = get_op_func(argv[2]);
+if (f == NULL)
 {
 printf("Error\n");
 exit(99);
 }
 
-num1 = atoi(arg[1]);
-num2 = atoi(arg[3]);
-if ((*arg[2] == '/' || *arg[2] == '%') && (num2 == 0))
-{
-printf("Error\n");
-exit(100);
-}
-operate = get_op_func(arg[2]);
-printf("%d\n", operate(num1, num2));
+printf("%d\n", f(a, b));
 return (0);
-
 }
