@@ -46,5 +46,6 @@ printf(", ");
 i++;
 }
 printf("\n");
-va_end(args);
+va_end(list);
 }
+/* hello Lau */
