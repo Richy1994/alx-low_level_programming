@@ -1,8 +1,4 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
-
 
 /**
  * print_listint - Function that prints all elements
@@ -19,5 +15,5 @@ while (h)
 printf("%d\n", h->n);
 h = h->next, i++;
 }
-return (i);
+return (0);
 }
