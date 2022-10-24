@@ -4,7 +4,7 @@
  * print_listint_safe - Listas enlazadas
  * @head: Dado desde main
  *
- * Return: i
+ * Return: i;
  */
 size_t print_listint_safe(const listint_t *head)
 {
