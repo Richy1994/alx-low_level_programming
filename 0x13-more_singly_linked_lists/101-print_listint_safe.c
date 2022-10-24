@@ -4,11 +4,11 @@
  * print_listint_safe - Listas enlazadas
  * @head: Dado desde main
  *
- * Return: (i);
+ * Return: 0;
  */
 size_t print_listint_safe(const listint_t *head)
 {
-size_t i = 0;
+size_t i = (0);
 const listint_t *temp, *node;
 
 node = head;
@@ -24,5 +24,5 @@ printf("-> [%p] %d\n", (void *)node, node->n);
 break;
 }
 }
-return (i);
+return (0);
 }
